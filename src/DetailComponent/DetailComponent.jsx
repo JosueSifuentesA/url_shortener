@@ -1,6 +1,8 @@
 import DetailStatisticHandler from "../DetailStatisticHandler/DetailStatisticHandler";
 import iconRecognition from "../assets/icon-brand-recognition.svg";
 import iconDetailedRecords from "../assets/icon-detailed-records.svg";
+import iconFullyCustomizable from "../assets/icon-fully-customizable.svg";
+
 const DetailComponent = () => {
   return (
     <section className="detailComponent">
@@ -29,10 +31,10 @@ const DetailComponent = () => {
       />
 
       <DetailStatisticHandler
-        img={iconDetailedRecords}
-        title={"Detailed Records"}
+        img={iconFullyCustomizable}
+        title={"Fully Customizable"}
         paragraph={
-          "Gain insights into who is clicking your links.Knowing when and where people engage with your content helps inform better decisions."
+          "Improve brand awareness and content discoverability through customizable links, supercharging audience engagement."
         }
       />
     </section>
