@@ -5,6 +5,7 @@ import HeaderdComponent from "./HeaderComponent/HeaderComponent";
 import HeroComponent from "./HeroComponent/HeroComponent";
 import UrlComponent from "./UrlComponent/UrlComponent";
 import DetailComponent from "./DetailComponent/DetailComponent";
+import BoostComponent from "./BoostComponent/BoostComponent";
 function App() {
   const [count, setCount] = useState(0);
 
@@ -21,6 +22,11 @@ function App() {
 
       <UrlComponent />
       <DetailComponent />
+
+      <BoostComponent
+        title={"Boost your links today"}
+        buttonText={"Get Started"}
+      />
     </main>
   );
 }
