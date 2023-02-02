@@ -1,3 +1,6 @@
+import DetailStatisticHandler from "../DetailStatisticHandler/DetailStatisticHandler";
+import iconRecognition from "../assets/icon-brand-recognition.svg";
+import iconDetailedRecords from "../assets/icon-detailed-records.svg";
 const DetailComponent = () => {
   return (
     <section className="detailComponent">
@@ -8,6 +11,30 @@ const DetailComponent = () => {
           statistics dashboard.
         </p>
       </div>
+
+      <DetailStatisticHandler
+        img={iconRecognition}
+        title={"Brand Recognition"}
+        paragraph={
+          "Boost your brand recognition with each click. Generic links don't mean a thing. Branded links help instil confidence in your content."
+        }
+      />
+
+      <DetailStatisticHandler
+        img={iconDetailedRecords}
+        title={"Detailed Records"}
+        paragraph={
+          "Gain insights into who is clicking your links.Knowing when and where people engage with your content helps inform better decisions."
+        }
+      />
+
+      <DetailStatisticHandler
+        img={iconDetailedRecords}
+        title={"Detailed Records"}
+        paragraph={
+          "Gain insights into who is clicking your links.Knowing when and where people engage with your content helps inform better decisions."
+        }
+      />
     </section>
   );
 };

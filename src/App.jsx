@@ -4,7 +4,7 @@ import "./App.css";
 import HeaderdComponent from "./HeaderComponent/HeaderComponent";
 import HeroComponent from "./HeroComponent/HeroComponent";
 import UrlComponent from "./UrlComponent/UrlComponent";
-
+import DetailComponent from "./DetailComponent/DetailComponent";
 function App() {
   const [count, setCount] = useState(0);
 
