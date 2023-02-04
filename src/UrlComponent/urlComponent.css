@@ -1,5 +1,8 @@
 .componentContainer_inputHandler {
   background-color: var(--darkViolet);
+  background-image: url(../assets/bg-shorten-mobile.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
   display: flex;
   flex-flow: column;
   align-items: stretch;
@@ -8,4 +11,5 @@
   width: 90vw;
   margin: 10px auto;
   box-sizing: border-box;
+  border-radius: 10px;
 }
