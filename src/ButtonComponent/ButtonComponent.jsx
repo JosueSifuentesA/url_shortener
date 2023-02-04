@@ -30,6 +30,7 @@ const ButtonComponent = ({
         color: `${textColor}`,
         borderRadius: `${borderRadius}px`,
         border: "none",
+        minHeight: "50px",
       }}
     >
       {buttonText}
