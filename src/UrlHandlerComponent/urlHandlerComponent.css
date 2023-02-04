@@ -17,6 +17,7 @@
 .resultHandler_link {
   text-decoration: none;
   color: var(--cyan);
+  min-height: 50px;
 }
 
 .urlHandler_label {
