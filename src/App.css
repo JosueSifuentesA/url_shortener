@@ -21,3 +21,9 @@
 h1 {
   font-size: 22px;
 }
+
+input {
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: none;
+}

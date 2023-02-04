@@ -1,0 +1,23 @@
+.componentContainer_urlHandler {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 80vw;
+  margin: 10px auto;
+  border-radius: 5px;
+}
+
+.urlHandler_resultHandler {
+  display: flex;
+  flex-flow: column;
+  padding: 15px 10px;
+}
+
+.resultHandler_link {
+  text-decoration: none;
+  color: var(--cyan);
+}
+
+.urlHandler_label {
+  padding: 5px 10px;
+}

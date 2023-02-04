@@ -1,9 +1,14 @@
+import "./urlHandlerComponent.css";
+
 const UrlHandlerComponent = ({ originalLink, shortedLink, buttonText }) => {
   return (
     <div className="componentContainer_urlHandler">
-      <label>{originalLink}</label>
+      <label className="urlHandler_label">{originalLink}</label>
+      <hr></hr>
       <div className="urlHandler_resultHandler">
-        <span>{shortedLink}</span>
+        <a className="resultHandler_link" href={shortedLink}>
+          {shortedLink}
+        </a>
         <button>{buttonText}</button>
       </div>
     </div>
