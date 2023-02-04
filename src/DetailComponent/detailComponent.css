@@ -1,0 +1,20 @@
+.detailComponent {
+  background-color: hsla(258, 7%, 63%, 0.178);
+  display: flex;
+  flex-flow: column;
+  gap: 50px;
+  padding-bottom: 20vh;
+  padding-top: 20vh;
+}
+
+.detailComponent_header {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.header_paragraph {
+  text-align: center;
+  color: var(--grayishViolet);
+}

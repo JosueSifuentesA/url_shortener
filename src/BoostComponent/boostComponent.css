@@ -1,0 +1,25 @@
+.boostSection {
+  background-image: url(../assets/bg-boost-mobile.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: var(--darkViolet);
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  height: 30vh;
+  gap: 35px;
+}
+
+.boostSection_h1 {
+  color: white;
+  font-size: 22px;
+}
+
+.boostSection_button {
+  background-color: var(--cyan);
+  padding: 10px 35px;
+  color: white;
+  border-radius: 20px;
+  border: none;
+}

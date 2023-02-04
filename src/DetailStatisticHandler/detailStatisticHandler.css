@@ -1,0 +1,26 @@
+.DetailStatisticHandler {
+  background-color: white;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  width: 90%;
+  margin: 0px auto;
+  border-radius: 10px;
+  padding: 0px 20px 20px;
+  box-sizing: border-box;
+  gap: 15px;
+}
+
+.DetailStatisticHandler_paragraph {
+  text-align: center;
+  font-size: 16px;
+  color: var(--grayishViolet);
+}
+
+.DetailStatisticHandler_img {
+  background-color: var(--darkViolet);
+  padding: 15px;
+  border-radius: 50%;
+  position: relative;
+  bottom: 35px;
+}

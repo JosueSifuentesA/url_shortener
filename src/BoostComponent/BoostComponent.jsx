@@ -1,3 +1,4 @@
+import "./boostComponent.css";
 const BoostComponent = ({ title, buttonText }) => {
   return (
     <section className="boostSection">

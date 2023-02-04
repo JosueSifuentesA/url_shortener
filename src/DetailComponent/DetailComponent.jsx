@@ -3,12 +3,14 @@ import iconRecognition from "../assets/icon-brand-recognition.svg";
 import iconDetailedRecords from "../assets/icon-detailed-records.svg";
 import iconFullyCustomizable from "../assets/icon-fully-customizable.svg";
 
+import "./detailComponent.css";
+
 const DetailComponent = () => {
   return (
     <section className="detailComponent">
       <div className="detailComponent_header">
-        <h1>Advanced Statistics</h1>
-        <p>
+        <h1 className="header_h1">Advanced Statistics</h1>
+        <p className="header_paragraph">
           Track how your links are performing across the web with our advanced
           statistics dashboard.
         </p>
