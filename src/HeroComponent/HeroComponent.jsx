@@ -6,7 +6,11 @@ const HeroComponent = ({ title, paragraph, buttonText }) => {
   return (
     <section className="heroComponent">
       <div>
-        <img className="heroComponent_img" src={iconWorking} />
+        <img
+          className="heroComponent_img"
+          src={iconWorking}
+          alt="Ilustration of somebody working in a desk"
+        />
       </div>
       <div className="heroComponent_info">
         <h1 className="info_h1">{title}</h1>

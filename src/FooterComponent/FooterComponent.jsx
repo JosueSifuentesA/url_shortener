@@ -25,10 +25,10 @@ const FooterComponent = () => {
       ))}
 
       <div className="footerSection_media">
-        <img src={iconFacebook} />
-        <img src={iconTwitter} />
-        <img src={iconPinterest} />
-        <img src={iconInstagram} />
+        <img src={iconFacebook} alt="Icon of facebook" />
+        <img src={iconTwitter} alt="Icon of twitter" />
+        <img src={iconPinterest} alt="Icon of pinterest" />
+        <img src={iconInstagram} alt="Icon of instagram" />
       </div>
     </section>
   );

@@ -22,6 +22,7 @@ const DetailComponent = () => {
         paragraph={
           "Boost your brand recognition with each click. Generic links don't mean a thing. Branded links help instil confidence in your content."
         }
+        altIcon="Icon of grafic records"
       />
 
       <DetailStatisticHandler
@@ -30,6 +31,7 @@ const DetailComponent = () => {
         paragraph={
           "Gain insights into who is clicking your links.Knowing when and where people engage with your content helps inform better decisions."
         }
+        altIcon={"Icon of a speedometer"}
       />
 
       <DetailStatisticHandler
@@ -38,6 +40,7 @@ const DetailComponent = () => {
         paragraph={
           "Improve brand awareness and content discoverability through customizable links, supercharging audience engagement."
         }
+        altIcon={"Icon of a group of art tools"}
       />
     </section>
   );
