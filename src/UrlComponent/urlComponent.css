@@ -1,0 +1,11 @@
+.componentContainer_inputHandler {
+  background-color: var(--darkViolet);
+  display: flex;
+  flex-flow: column;
+  align-items: stretch;
+  gap: 20px;
+  padding: 25px 50px;
+  width: 90vw;
+  margin: 10px auto;
+  box-sizing: border-box;
+}

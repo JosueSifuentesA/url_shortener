@@ -1,4 +1,5 @@
 import UrlHandlerComponent from "../UrlHandlerComponent/UrlHandlerComponent";
+import "./urlComponent.css";
 
 const UrlComponent = () => {
   return (

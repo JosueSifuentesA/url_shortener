@@ -1,0 +1,19 @@
+.heroComponent_info {
+  display: flex;
+  flex-flow: column;
+  gap: 5px;
+  align-items: center;
+  padding: 30px;
+}
+
+.info_paragraph {
+  text-align: center;
+}
+.info_h1 {
+  text-align: center;
+  font-size: 32px;
+}
+
+.heroComponent_img {
+  width: 100vw;
+}
