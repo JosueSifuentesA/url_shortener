@@ -1,4 +1,5 @@
 import iconWorking from "../assets/illustration-working.svg";
+import ButtonComponent from "../ButtonComponent/ButtonComponent";
 import "./heroComponent.css";
 
 const HeroComponent = ({ title, paragraph, buttonText }) => {
@@ -10,7 +11,11 @@ const HeroComponent = ({ title, paragraph, buttonText }) => {
       <div className="heroComponent_info">
         <h1 className="info_h1">{title}</h1>
         <p className="info_paragraph">{paragraph}</p>
-        <button className="buttonText">{buttonText}</button>
+        <ButtonComponent
+          buttonText={buttonText}
+          buttonColor="var(--cyan)"
+          textColor={"white"}
+        ></ButtonComponent>
       </div>
     </section>
   );

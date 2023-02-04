@@ -7,9 +7,14 @@
   flex-flow: column;
   align-items: stretch;
   gap: 20px;
-  padding: 25px 50px;
+  padding: 25px 20px;
   width: 90vw;
   margin: 10px auto;
   box-sizing: border-box;
   border-radius: 10px;
+}
+
+.componentContainer {
+  position: relative;
+  top: 35vh;
 }

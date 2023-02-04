@@ -1,5 +1,5 @@
 import "./urlHandlerComponent.css";
-
+import ButtonComponent from "../ButtonComponent/ButtonComponent";
 const UrlHandlerComponent = ({ originalLink, shortedLink, buttonText }) => {
   return (
     <div className="componentContainer_urlHandler">
@@ -9,7 +9,12 @@ const UrlHandlerComponent = ({ originalLink, shortedLink, buttonText }) => {
         <a className="resultHandler_link" href={shortedLink}>
           {shortedLink}
         </a>
-        <button>{buttonText}</button>
+        <ButtonComponent
+          buttonText={buttonText}
+          buttonColor="var(--cyan)"
+          textColor={"white"}
+          borderRadius={0}
+        ></ButtonComponent>
       </div>
     </div>
   );

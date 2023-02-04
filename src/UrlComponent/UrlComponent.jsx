@@ -1,3 +1,4 @@
+import ButtonComponent from "../ButtonComponent/ButtonComponent";
 import UrlHandlerComponent from "../UrlHandlerComponent/UrlHandlerComponent";
 import "./urlComponent.css";
 
@@ -6,7 +7,12 @@ const UrlComponent = () => {
     <div className="componentContainer">
       <div className="componentContainer_inputHandler">
         <input placeholder="Shorten a link here..." />
-        <button>Shorten it!</button>
+        <ButtonComponent
+          buttonText={"Shorten it!"}
+          buttonColor="var(--cyan)"
+          textColor={"white"}
+          borderRadius={0}
+        ></ButtonComponent>
       </div>
 
       <UrlHandlerComponent
