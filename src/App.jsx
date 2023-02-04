@@ -6,6 +6,8 @@ import HeroComponent from "./HeroComponent/HeroComponent";
 import UrlComponent from "./UrlComponent/UrlComponent";
 import DetailComponent from "./DetailComponent/DetailComponent";
 import BoostComponent from "./BoostComponent/BoostComponent";
+import FooterComponent from "./FooterComponent/FooterComponent";
+
 function App() {
   const [count, setCount] = useState(0);
 
@@ -27,6 +29,8 @@ function App() {
         title={"Boost your links today"}
         buttonText={"Get Started"}
       />
+
+      <FooterComponent />
     </main>
   );
 }
