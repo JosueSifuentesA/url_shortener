@@ -1,0 +1,10 @@
+{
+  "routes": [
+    {
+      "src": "/.*",
+      "headers": {
+        "Content-Encoding": "gzip"
+      }
+    }
+  ]
+}
