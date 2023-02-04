@@ -9,8 +9,6 @@ import BoostComponent from "./BoostComponent/BoostComponent";
 import FooterComponent from "./FooterComponent/FooterComponent";
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
     <main className="App">
       <HeaderdComponent />
