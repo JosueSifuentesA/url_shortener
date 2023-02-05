@@ -25,14 +25,29 @@ const UrlComponent = () => {
         console.log(response.result.short_link);
         const newShortedList = [...shortedLinks];
         newShortedList.push(response.result.short_link);
+        localStorage.setItem("shortedLink", JSON.stringify(newShortedList));
         setShortedLinks(newShortedList);
       });
 
     const newLinkList = [...linkList];
     newLinkList.push(data);
-    localStorage.setItem("originalLink", linkList);
+    localStorage.setItem("originalLink", JSON.stringify(newLinkList));
     setLinkList(newLinkList);
   };
+
+  useEffect(() => {
+    const storedLinkList = JSON.parse(localStorage.getItem("originalLink"));
+    const storedShortedLinkList = JSON.parse(
+      localStorage.getItem("shortedLink")
+    );
+    if (storedLinkList) {
+      setLinkList(storedLinkList);
+    }
+
+    if (storedShortedLinkList) {
+      setShortedLinks(storedShortedLinkList);
+    }
+  }, []);
 
   useEffect(() => {
     console.log(linkList);
