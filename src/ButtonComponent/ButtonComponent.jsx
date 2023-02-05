@@ -17,6 +17,7 @@ const ButtonComponent = ({
         border: "none",
       }}
       onClick={buttonFunction}
+      type="submit"
     >
       {buttonText}
     </button>
@@ -32,6 +33,7 @@ const ButtonComponent = ({
         border: "none",
         minHeight: "50px",
       }}
+      type="submit"
     >
       {buttonText}
     </button>

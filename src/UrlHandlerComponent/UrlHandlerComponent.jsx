@@ -6,9 +6,7 @@ const UrlHandlerComponent = ({ originalLink, shortedLink, buttonText }) => {
       <label className="urlHandler_label">{originalLink}</label>
       <hr></hr>
       <div className="urlHandler_resultHandler">
-        <a className="resultHandler_link" href={shortedLink}>
-          {shortedLink}
-        </a>
+        <a className="resultHandler_link">{shortedLink}</a>
         <ButtonComponent
           buttonText={buttonText}
           buttonColor="var(--cyan)"
