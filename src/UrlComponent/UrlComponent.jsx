@@ -17,14 +17,6 @@ const UrlComponent = () => {
   const [shortedLinks, setShortedLinks] = useState([]);
   const [refresh, setRefresh] = useState(false);
 
-  console.log("Nuevo renderizado");
-
-  /*useEffect(() => {
-    localStorage.clear();
-    setLinkList([]);
-    console.log("Refresh activo");
-  }, [refresh]);*/
-
   const submitFunction = async (data) => {
     await fetch(`${URL_API_SHORTER}${data.link}`)
       .then((datas) => datas.json())
@@ -104,7 +96,8 @@ const UrlComponent = () => {
         borderRadius={10}
         buttonFunction={() => {
           localStorage.clear();
-          setRefresh(!refresh);
+          setLinkList([]);
+          setShortedLinks([]);
         }}
       />
     </div>
