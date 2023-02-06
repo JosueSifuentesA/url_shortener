@@ -3,11 +3,15 @@ import iconRecognition from "../assets/icon-brand-recognition.svg";
 import iconDetailedRecords from "../assets/icon-detailed-records.svg";
 import iconFullyCustomizable from "../assets/icon-fully-customizable.svg";
 
+import UrlComponent from "../UrlComponent/UrlComponent";
+
 import "./detailComponent.css";
 
 const DetailComponent = () => {
   return (
     <section className="detailComponent">
+      <UrlComponent />
+
       <div className="detailComponent_header">
         <h1 className="header_h1">Advanced Statistics</h1>
         <p className="header_paragraph">

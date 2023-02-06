@@ -12,6 +12,9 @@ const UrlHandlerComponent = ({ originalLink, shortedLink, buttonText }) => {
           buttonColor="var(--cyan)"
           textColor={"white"}
           borderRadius={0}
+          buttonFunction={() => {
+            navigator.clipboard.writeText(shortedLink);
+          }}
         ></ButtonComponent>
       </div>
     </div>

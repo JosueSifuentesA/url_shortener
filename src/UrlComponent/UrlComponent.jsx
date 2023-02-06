@@ -15,10 +15,17 @@ const UrlComponent = () => {
 
   const [linkList, setLinkList] = useState([]);
   const [shortedLinks, setShortedLinks] = useState([]);
+  const [refresh, setRefresh] = useState(false);
+
+  console.log("Nuevo renderizado");
+
+  /*useEffect(() => {
+    localStorage.clear();
+    setLinkList([]);
+    console.log("Refresh activo");
+  }, [refresh]);*/
 
   const submitFunction = async (data) => {
-    console.log(data);
-
     await fetch(`${URL_API_SHORTER}${data.link}`)
       .then((datas) => datas.json())
       .then((response) => {
@@ -40,6 +47,7 @@ const UrlComponent = () => {
     const storedShortedLinkList = JSON.parse(
       localStorage.getItem("shortedLink")
     );
+
     if (storedLinkList) {
       setLinkList(storedLinkList);
     }
@@ -88,6 +96,17 @@ const UrlComponent = () => {
           />
         );
       })}
+
+      <ButtonComponent
+        buttonText={"CLEAR ALL 🗑"}
+        buttonColor={"red"}
+        textColor={"white"}
+        borderRadius={10}
+        buttonFunction={() => {
+          localStorage.clear();
+          setRefresh(!refresh);
+        }}
+      />
     </div>
   );
 };

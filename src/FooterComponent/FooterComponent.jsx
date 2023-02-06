@@ -13,6 +13,7 @@ const list = {
 const FooterComponent = () => {
   return (
     <section className="footerSection">
+      <h1 style={{ color: "white", fontSize: "42px" }}>{"Shortly"}</h1>
       {Object.entries(list).map(([key, value]) => (
         <div className="footerSection_infoContainer" key={key}>
           <h1 className="infoContainer_h1">{key}:</h1>

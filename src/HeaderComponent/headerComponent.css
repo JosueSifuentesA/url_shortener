@@ -1,0 +1,26 @@
+.optionContainer_label {
+  color: white;
+  font-weight: 600;
+}
+
+.optionContainer {
+  display: flex;
+  gap: 15px;
+  flex-flow: column;
+  margin: 5vh auto;
+  min-width: 250px;
+  align-items: center;
+  width: 80vw;
+  padding: 20px;
+  background-color: var(--darkViolet);
+  border-radius: 10px;
+}
+
+@media (min-width: 1000px) {
+  .headerOptions {
+    display: none;
+  }
+  .optionContainer {
+    display: none;
+  }
+}

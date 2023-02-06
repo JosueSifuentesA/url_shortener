@@ -16,5 +16,9 @@
 
 .componentContainer {
   position: relative;
-  top: 35vh;
+  bottom: 15vh;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  gap: 10px;
 }

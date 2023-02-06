@@ -19,10 +19,7 @@ function App() {
         }
         buttonText={"Get Started"}
       />
-
-      <UrlComponent />
       <DetailComponent />
-
       <BoostComponent
         title={"Boost your links today"}
         buttonText={"Get Started"}

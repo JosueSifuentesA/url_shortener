@@ -1,7 +1,7 @@
 .heroComponent_info {
   display: flex;
   flex-flow: column;
-  gap: 5px;
+  gap: 35px;
   align-items: center;
   padding: 30px;
 }
@@ -16,4 +16,8 @@
 
 .heroComponent_img {
   width: 100vw;
+}
+
+.heroComponent {
+  padding-bottom: 20vh;
 }
