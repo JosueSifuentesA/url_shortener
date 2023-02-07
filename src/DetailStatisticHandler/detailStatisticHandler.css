@@ -24,3 +24,15 @@
   position: relative;
   bottom: 35px;
 }
+
+@media (min-width: 1000px) {
+  .DetailStatisticHandler__DetailedRecords {
+    position: relative;
+    top: 5vh;
+  }
+
+  .DetailStatisticHandler__FullyCustomizable {
+    position: relative;
+    top: 10vh;
+  }
+}

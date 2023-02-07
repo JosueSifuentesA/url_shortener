@@ -27,3 +27,12 @@
   gap: 20px;
   padding: 20px;
 }
+
+@media (min-width: 1000px) {
+  .footerSection {
+    flex-flow: row;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    padding: 5vh 0px;
+  }
+}
