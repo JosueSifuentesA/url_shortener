@@ -7,23 +7,35 @@ const HeaderdComponent = () => {
   const [clicked, setClicked] = useState(false);
 
   return (
-    <header style={{ display: "flex", flexFlow: "column", padding: "20px" }}>
-      <div
-        style={{
-          display: "flex",
-          justifyContent: "space-between",
-          alignItems: "center",
-        }}
-      >
+    <header className="header">
+      <div className="header_navBar">
         <img
           src={iconLogo}
           alt="Web logo"
           style={{ maxWidth: "150px", width: "30vw", height: "5vh" }}
         />
+
+        <div className="navBar_options">
+          <div className="options_data">
+            <label>Features</label>
+            <label>Pricing</label>
+            <label>Resources</label>
+          </div>
+
+          <div className="options_login">
+            <label>Login</label>
+            <ButtonComponent
+              buttonText={"Sign Up"}
+              buttonColor={"var(--cyan)"}
+              textColor={"white"}
+              borderRadius={60}
+            />
+          </div>
+        </div>
+
         <div
           className="headerOptions"
           onClick={() => {
-            //alert("clicked");
             setClicked(!clicked);
           }}
         >

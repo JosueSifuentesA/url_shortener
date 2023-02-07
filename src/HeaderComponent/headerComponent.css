@@ -16,11 +16,56 @@
   border-radius: 10px;
 }
 
+.navBar_options {
+  display: none;
+}
+
+.header_navBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header {
+  width: 90%;
+  margin: 20px auto;
+}
+
 @media (min-width: 1000px) {
   .headerOptions {
     display: none;
   }
   .optionContainer {
     display: none;
+  }
+
+  .navBar_options {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .header {
+    display: flex;
+    flex-flow: column;
+    padding: 20px;
+  }
+
+  .header_navBar {
+    justify-content: flex-start;
+    gap: 50px;
+    margin: 0px auto;
+    width: 90%;
+  }
+  .options_data {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+  }
+
+  .options_login {
+    display: flex;
+    gap: 50px;
+    align-items: center;
   }
 }

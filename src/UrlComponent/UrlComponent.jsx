@@ -15,7 +15,7 @@ const UrlComponent = () => {
 
   const [linkList, setLinkList] = useState([]);
   const [shortedLinks, setShortedLinks] = useState([]);
-  const [refresh, setRefresh] = useState(false);
+  const [clickedButtonList, setClickedButtonList] = useState([]);
 
   const submitFunction = async (data) => {
     await fetch(`${URL_API_SHORTER}${data.link}`)
@@ -49,11 +49,14 @@ const UrlComponent = () => {
     }
   }, []);
 
-  useEffect(() => {
-    console.log(linkList);
-    console.log(localStorage);
-  }, [linkList]);
-
+  const recieveDataFunctionUrl = (data) => {
+    /*const newClickedButtonList = [...clickedButtonList];
+    newClickedButtonList.push(data);
+    setClickedButtonList(newClickedButtonList);*/
+    setClickedButtonList([...clickedButtonList, data]);
+    console.log(data);
+  };
+  console.log("rendered");
   return (
     <div className="componentContainer">
       <form
@@ -79,13 +82,13 @@ const UrlComponent = () => {
       </form>
 
       {linkList?.map((module, index) => {
-        console.log(module);
         return (
           <UrlHandlerComponent
             key={`UrlHandler_${index}`}
             originalLink={module.link}
             shortedLink={shortedLinks[index]}
             buttonText={"copy"}
+            dataFunction={recieveDataFunctionUrl}
           />
         );
       })}
