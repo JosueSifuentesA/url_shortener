@@ -61,6 +61,7 @@ const UrlComponent = () => {
         className="componentContainer_inputHandler"
       >
         <input
+          className="inputHandler_textInput"
           {...register("link", { required: true })}
           placeholder="Shorten a link here..."
         />

@@ -26,3 +26,23 @@
   text-overflow: ellipsis;
   overflow: hidden;
 }
+
+@media (min-width: 1000px) {
+  .componentContainer_urlHandler {
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 85vw;
+  }
+
+  .urlHandler_resultHandler {
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    gap: 40px;
+  }
+  .resultHandler_link {
+    min-height: 0px;
+  }
+}

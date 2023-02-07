@@ -22,3 +22,16 @@
   align-items: center;
   gap: 10px;
 }
+
+@media (min-width: 1000px) {
+  .componentContainer_inputHandler {
+    width: 85vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .inputHandler_textInput {
+    width: 75%;
+  }
+}

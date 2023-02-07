@@ -21,3 +21,36 @@
 .heroComponent {
   padding-bottom: 20vh;
 }
+
+@media (min-width: 1000px) {
+  .heroComponent {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 90vw;
+    margin: 0px auto;
+  }
+
+  .heroComponent_img {
+    width: 100%;
+  }
+
+  .heroComponent_info {
+    display: flex;
+    flex-flow: column;
+    gap: 15px;
+    align-items: start;
+    padding: 40px;
+    box-sizing: border-box;
+    max-width: 50%;
+  }
+
+  .info_paragraph {
+    text-align: start;
+  }
+
+  .info_h1 {
+    text-align: start;
+    font-size: 62px;
+    font-weight: 600;
+  }
+}
